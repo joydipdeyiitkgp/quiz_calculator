@@ -64,6 +64,11 @@
 			$('#helpContent').hide();
 			
 		});
+
+		$(".calc_close").live('click', function(){
+			var myobj = document.getElementById("totalbody");
+            myobj.remove();
+	});
                   
 		/** new help changes **/
 	</script>
@@ -84,6 +89,7 @@
 </head>
 <!--<body class="unselectable" oncontextmenu="return false;" onselect="return false;" ondragstart="return false;" onmousewheel="return false;">-->
 <body>
+	<div id="totalbody">
 	<div id="keyPad" class="ui-widget-content calc_container">
     <!-- new Help changes -->
     <div id="helptopDiv">
@@ -237,6 +243,6 @@
 	</div>
 	</div>
     
-    
+</div>
 </body>
 </html>
